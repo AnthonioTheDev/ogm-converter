@@ -4,3 +4,10 @@
 ```bash
 node src/index.js input.txt output.txt
 ```
+
+If you omit the output filename, it will automatically default to `chapters.txt` in the same directory:
+
+```bash
+node ogm-converter.js input.txt
+
+```

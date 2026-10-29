@@ -46,8 +46,8 @@ if (args.length < 1) {
 }
 
 const inputFile = path.resolve(args[0]);
-
-const outputFile = path.resolve(args[1]);
+// Default to 'chapters.txt' if no output file is provided
+const outputFile = args[1] ? path.resolve(args[1]) : path.resolve('chapters.txt');
 
 if (!fs.existsSync(inputFile)) {
     console.error(`Input file not found: ${inputFile}`);
